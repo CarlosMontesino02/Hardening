@@ -23,8 +23,10 @@ En este proyecto se va a realizar una guía de hardening de un punto de acceso p
 | Número de pilas de metal de litio              | ‎5                                                                                        |
 | Peso del producto                              | ‎1,01 kg                                                                                  |
 | Actualizaciones de software garantizadas hasta | ‎desconocido                                                                              |
+
 Sin duda se trata de un router de uso doméstico, con una interfaz bastante detallada, y varias opciones interesantes a nivel de seguridad que vamos a explorar más a fondo.
 ![Imagen del router](img/bas_1.png)
+
 Usaremos un [emulador web](https://demoui.asus.com/index.asp) que nos proporciona Asus, que simula la interfaz web del router, donde aplicaremos los cambios que usaría en un caso real. Cuando entramos por primera vez vemos el siguiente dashboard:
 
 ![Imagen del router](img/bas_2.png)
@@ -42,11 +44,13 @@ Por último he creado una calve segura para poder autenticarse, ya que la que ve
 La siguiente opción que vamos a habilitar es la "Ai protection":
 
 ![Imagen del router](img/bas_4.png)
+
 ![Imagen del router](img/bas_5.png)
 
 Las opciones de seguridad de este router me han sorprendido ya que nunca las había visto en algún otro router, vemos que he habilitado un bloqueo de páginas web maliciosas, una medida de protección ante denegaciones de servicio distribuidas, que además bloquea paquetes considerados maliciosos y otra opción que es capaz de prevenir la conexión de dispositivos infectados con algún malware, funcionando como una especie de antivirus.
 
 El siguiente paso sería deshabilitar AiCloud 2.0:
+
 ![Imagen del router](img/bas_6.png)
 
 Aunque las funciones presentadas son interesantes y pueden resultar útiles, parte del hardening es reducir la superficie de ataque  a nuestro sistema, y en este caso, no veo necesarias las funciones de acceso a dispositivos USB ni el acceso remoto a equipos en un dominio Samba con la opción de Wake-on-Lan.
